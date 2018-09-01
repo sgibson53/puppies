@@ -1,0 +1,32 @@
+$header-inner-height: 60px;
+$primary: rgb(87, 221, 181);
+
+.header-wrapper {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  padding: 10px 40px;
+  box-sizing: border-box;
+
+  .left-nav-list {
+    display: flex;
+    .left-nav-item {
+      margin: 0 15px;
+      height: $header-inner-height;
+      line-height: $header-inner-height;
+    }
+  }
+
+  .separator {
+    flex: 1;
+  }
+
+  .right-logo {
+    height: $header-inner-height;
+    line-height: $header-inner-height;
+    font-size: 2.9rem;
+    padding: 0 10px;
+    color: white;
+    background: $primary;
+  }
+}
